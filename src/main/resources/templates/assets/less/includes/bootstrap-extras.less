@@ -1,0 +1,66 @@
+/* 
+X. =BOOTSTRAP ELEMENTS OVERRIDES
+=============================================================== 
+*/ 
+
+.bs-example-tabs .nav-tabs {  margin-bottom: 15px;  }
+
+.form-control {
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+
+.panel-primary {
+  border-color: @brand-primary;
+}
+
+.pagination > li > a, 
+.pagination > li > span,
+.pagination-lg > li:first-child > a, 
+.pagination-lg > li:first-child > span,
+.pagination-lg > li:last-child > a, 
+.pagination-lg > li:last-child > span,
+.pagination > li:first-child > a, 
+.pagination > li:first-child > span,
+.pagination > li:last-child > a, 
+.pagination > li:last-child > span,
+.pagination-sm > li:last-child > a, 
+.pagination-sm > li:last-child > span {
+  background-color: rgba(255,255,255,.65);
+}
+
+.progress,
+.progress-bar {
+  box-shadow: none;
+}
+
+.badge {
+  background-color: @brand-primary;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: @brand-secondary;
+  border-color: @brand-secondary;
+}
+
+/* =JUMBOTRON */
+
+.jumbotron {  background-color: #ccc;  }
+.jumbotron .container {  max-width: 100%;  }
+@media screen and (min-width: 768px) {
+  .jumbotron {  padding: 48px 0;  }
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 63px;
+  }
+}

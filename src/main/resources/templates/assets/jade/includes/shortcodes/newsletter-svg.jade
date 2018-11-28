@@ -1,0 +1,15 @@
+
+// ============================ SVG NEWSLETTER ============================
+
+.newsletter_form.svg_newsletter
+	.row
+		.col-md-6.left_area
+			h3 OUR NEWSLETTER
+			p Subscribe and get daily notifications about our offers.
+		.col-md-6.right_area
+			form#newsletter.form-inline(action='assets/php/mailchimp/mailchimp.php', method='POST')
+				input#email.form-control.newsletter_input(placeholder='Give Us your e-mail...', name='email', type='text')
+				button.form-control.btn.btn-primary(type='submit') Go AHEAD!
+				span#newsletterResponse.btn.btn-primary.hidden MESSAGE
+
+// END========================= SVG NEWSLETTER ============================

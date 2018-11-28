@@ -1,0 +1,129 @@
+extends config/layout.jade
+
+//-====================================
+//- CONFIG-OVERRIDES: Add your settings here to override the defaults from config.jade
+block config
+	- var production        		= false
+	- var demoMode          		= false
+	- var jquery_1          		= false
+	- var page_title        		= "XENIA - Luxury hotel"
+	- var stylesheet        		= "style.css"
+	- var displayLogo       		= true
+	- var displayTools      		= false
+	- var headerClass       		= 'click_menu transparent'
+	- var logo_link        		= 'index.html'
+	- var header_nav_class  	= 'nav_centered uppercase transparent'
+	- var bodyClass         		= ''
+	- var bodyStyle        	 	= ""
+	- var pagewrapperClass  	= ''
+	- var owlSlider         		= true
+	- var lightbox          		= false
+	- var beforeAfter       		= false
+	- var twitterFeed       		= false
+	- var googleMaps        		= false
+	- var isotope           		= true
+	- var ajaxLoader        		= false
+	- var newsletter        		= false
+	- var parallax          		= true
+	- var easing            		= false
+	- var wowAnimation     		= true
+	- var contactForm       		= false
+//-====================================
+
+block header_content
+	include includes/header  
+
+block main_content
+	.head_panel
+		.full_width_photo.vertical_center.parallax-window.bg_vbottom.padding_top_half.transparent_film(style="background-image: url(assets/images/home-packages.jpg)")
+			.container
+				.row
+					.col-md-8.col-md-offset-2.text-center
+						.caption.caption_elegant
+							.inner
+								.t3.uppercase  XENIA'S ACTIVITIES
+								.t1 SPORTS &AMP; ACTIVITIES
+	section.light_section.text-center
+		.container
+			.row
+				.col-md-12
+					.section_header.elegant
+						h1 TONS OF ACTIVITIES
+						p FROM SPORTS TO SIGHTSEEING, WE HAVE IT ALL
+						img(src="assets/images/decoration-1.png" alt="Image")
+			.row.vcenter.margin_top_half
+				.col-md-6.text-left
+					.text_block.activities
+						span SPORTS
+						h3 ATTRACTIONS
+						p Discover everything we can provide you. Our courts and our sport facilities. Blessed That day you're dominion lesser cattle the lesser form sea earth won't. Morning made. Can't she'd days sixth beast spirit likeness. Also face Kind fowl so in seas.
+						div.col-md-4.col-sm-6
+							.row
+								i.icon.icon-Soccer
+								h4 Soccer
+								p A soccer court for everyone to play.
+						div.col-md-4.col-sm-6
+							.row
+								i.icon.icon-TennisBall
+								h4 TENNIS
+								p 4 tennis courts inside the resort.
+						div.col-md-4.col-sm-6
+							.row
+								i.icon.icon-Bicycle
+								h4 BIKE ROAD
+								p Private roads to bike your bicycle.
+						div.col-md-4.col-sm-6
+							.row
+								i.icon.icon-Pool
+								h4 POOL
+								p Pool tabled for crazy shots
+						div.col-md-4.col-sm-6
+							.row
+								i.icon.icon-Footbal
+								h4 FOOTBALL
+								p A football court for everyone.
+						div.col-md-4.col-sm-6
+							.row
+								i.icon.icon-Headset
+								h4 TRACK
+								p A track for everyone to run.
+				.col-md-6.margin_bottom_half
+					img(src="assets/images/vacation-package-3.jpg").small_screen_margin_top
+	section.dark_section.text-center.background_cover.bg_vbottom.transparent_film(style="background-image: url(assets/images/packages-banner-1.jpg);")
+		.container					
+			.col-md-8.col-md-offset-2.margin_top_half
+				.text_block
+					h2 FREE SPORTS FOR ALL
+					p You can book your room online, and automatically reserve a seat for all the sports activites in our 5-star sports fields. So do not wait, book your room now!
+					a.btn.btn-white(href="booking.html") BOOK NOW
+	section.white_section.text-center
+		.container
+			.row
+				.col-md-12
+					.section_header.elegant
+						h1 MOUNTAIN TRIP
+						p EXPLORE THE NATURAL BEAUTY
+						img(src="assets/images/decoration-1.png" alt="Image")
+			.row.vcenter.margin_top_half
+				.col-md-6.text-left
+					.text_block
+						span WILD BEAUTY
+						h3 A MOUNTAIN WITH SEA VIEW
+						p A wide range of remarkable unique tastes and feelings. Blessed That day you're dominion lesser cattle the lesser form sea earth won't. Morning made. Can't she'd days sixth beast spirit likeness. Also face Kind fowl so in seas. Gathered may stars land, his dry tree signs make place under signs him upon of rule fill light may deep that.
+						a.btn.btn-link(href="location.html") OUR LOCATION
+				.col-md-6.margin_bottom_half.small_screen_margin_top
+					img(src="assets/images/vacation-package-1.jpg" alt="Image")
+			.row.vcenter
+				.col-md-6.margin_bottom_half
+					img(src="assets/images/vacation-package-2.jpg" alt="Image")
+				.col-md-6.text-left
+					.text_block
+						span PEOPLE GROUP
+						h3 WE TRAVEL AS A GROUP
+						p You can always enjoy your dinner privately. Blessed That day you're dominion lesser cattle the lesser form sea earth won't. Morning made. Can't she'd days sixth beast spirit likeness. Also face Kind fowl so in seas. Gathered may stars land, his dry tree signs make place under signs him upon of rule fill light may honestly amazing.
+						a.btn.btn-link(href="location.html") OUR LOCATION
+block footer_content
+	include includes/footer
+  
+block secondary_nav_widgetized_area_content
+	include includes/secondary-widgetized-area

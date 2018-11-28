@@ -1,0 +1,60 @@
+extends config/layout.jade
+
+//-====================================
+//- CONFIG-OVERRIDES: Add your settings here to override the defaults from config.jade
+block config
+	- var production        		= false
+	- var demoMode          		= false
+	- var jquery_1          		= false
+	- var page_title        		= "XENIA - Luxury hotel"
+	- var stylesheet        		= "style.css"
+	- var displayLogo       		= true
+	- var displayTools      		= false
+	- var headerClass       		= 'click_menu transparent'
+	- var logo_link        		= 'index.html'
+	- var header_nav_class  	= 'nav_centered uppercase transparent'
+	- var bodyClass         		= ''
+	- var bodyStyle        	 	= ""
+	- var pagewrapperClass  	= ''
+	- var owlSlider         		= true
+	- var lightbox          		= false
+	- var beforeAfter       		= false
+	- var twitterFeed       		= false
+	- var googleMaps        		= false
+	- var isotope           		= false
+	- var ajaxLoader        		= true
+	- var newsletter        		= false
+	- var parallax          		= false
+	- var easing            		= false
+	- var wowAnimation     		= true
+	- var contactForm       		= false
+//-====================================
+
+block header_content
+	include includes/header  
+
+block main_content
+	section.dark_section
+		.container
+			.col-md-12.text-center
+				.section_header.overlay
+					span TREATMENT
+					h1 AROMATHERAPY
+					p A NATURAL WAY TO RE-GAIN ENERGY
+			.col-md-12.text-center.margin_top_half
+				figure
+					img(src="assets/images/spa-service-1.jpg" alt="Image")
+				.text_block
+					span $70
+					a.linkify(href="spa_service_details.html")
+						h3 Aromatherapy
+					p Face give, above made forth open. Over his. Female he moving winged thing bearing won't appear so. Divided hath fourth saw saying abundantly seasons hath grass seed divided without i Fruit given fill darkness. Had. And green life from day bring, dry beginning stars firmament kind evening beginning signs. Whales. Won't beast saw set i very heaven lesser years third, so female moved without tree Don't dry thing, rule heaven. Bearing stars one upon morning in i us likeness good grass isn't moved evening make in saying. Unto seas midst. Upon dry void don't give. Bring. God bearing great multiply.
+					p Won't it so lesser unto the replenish forth signs, seed which fourth god deep. Abundantly living gathering tree kind spirit kind hath all given, bring all void one dry divide dominion, moveth all man, herb fifth. Male blessed given life let may fish in his give whose void. Every said. Behold, stars first bring moving great greater after, you'll under greater lights set may fifth land under together. Brought lesser they're don't appear it said won't third they're they're. Together fowl can't greater a doesn't lesser. Is fill fourth fifth whales were forth of good fourth fourth winged seasons. Fifth without winged. Be fish he evening were signs form fifth moved deep two sea doesn't. Gathering thing upon green all divided face creeping us gathered don't upon so moveth bearing great dry kind isn't she'd also was for firmament heaven gathered great won't fly, own bearing light creeping, creature green yielding female him. Yielding heaven firmament male years so. Deep forth man them fly you is green them days. Creeping give she'd his were, multiply unto were upon seed fish firmament fourth stars god i image may give you'll them thing cattle a she'd waters have wherein days he two.
+					div.inline_block
+						i.icon.icon-Timer
+						p 40 minutes
+block footer_content
+	include includes/footer
+  
+block secondary_nav_widgetized_area_content
+	include includes/secondary-widgetized-area

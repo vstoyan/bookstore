@@ -1,0 +1,153 @@
+extends config/layout.jade
+
+//-====================================
+//- CONFIG-OVERRIDES: Add your settings here to override the defaults from config.jade
+block config
+	- var production        		= false
+	- var demoMode          		= false
+	- var jquery_1          		= false
+	- var page_title        		= "XENIA - Luxury hotel"
+	- var stylesheet        		= "style.css"
+	- var displayLogo       		= true
+	- var displayTools      		= false
+	- var headerClass       		= 'click_menu transparent'
+	- var logo_link        		= 'index.html'
+	- var header_nav_class  	= 'nav_centered uppercase transparent'
+	- var bodyClass         		= ''
+	- var bodyStyle        	 	= ""
+	- var pagewrapperClass  	= ''
+	- var owlSlider         		= true
+	- var lightbox          		= false
+	- var beforeAfter       		= false
+	- var twitterFeed       		= false
+	- var googleMaps        		= false
+	- var isotope           		= true
+	- var ajaxLoader        		= false
+	- var newsletter        		= false
+	- var parallax          		= true
+	- var easing            		= false
+	- var wowAnimation     		= true
+	- var contactForm       		= false
+//-====================================
+
+block header_content
+	include includes/header  
+
+block main_content
+	.head_panel
+		.full_width_photo.vertical_center.parallax-window.bg_vbottom.padding_top_half.transparent_film(style="background-image: url(assets/images/home-gym.jpg)")
+			.container
+				.row
+					.col-md-8.col-md-offset-2.text-center
+						.caption.caption_elegant
+							.inner
+								.t3.uppercase  XENIA'S GYM
+								.t1 PRIVATE WORKOUT
+	section.white_section
+		.container
+			.col-md-12.text-center
+				.section_header.elegant
+					h1 XENIA RESORT GYM
+					p A MAGICAL WORKOUT WORLD
+					img(src="assets/images/decoration-1.png" alt="Image")
+			.col-md-4.text-center.margin_top_half
+				.icon_block
+					i.icon.icon-Shaker
+					h4 Keep fit
+					p Even in your holidays, you can spend 20 minutes to keep fit, in our modern gym.
+			.col-md-4.text-center.margin_top_half
+				.icon_block
+					i.icon.icon-Bicycle
+					h4 EXCERCISE MACHINES
+					p Our resort's gym is equiped with all the potential equipment you'll probably need.
+			.col-md-4.text-center.margin_top_half
+				.icon_block
+					i.icon.icon-Time
+					h4 OPENING HOURS
+					p Monday-Saturday:  <br>
+						| 9PM - 9AM
+	section.light_section.no_padding.vcenter
+		.container-fluid
+			.row
+				.col-md-6.col-lg-8
+					.row
+						.stretchy_wrapper.ratio_16-9(style="background-image: url(assets/images/gym-1.jpg)")
+				.col-md-6.col-lg-4.col-lg-pull-1
+					.row
+						.banner.text_block
+							span MODERN EQUIPMENT
+							h2 EVERYTHING YOU'LL NEED
+							p They're seas gathering behold the years saying make and divide fill given whales fill female moved, blessed. Midst one from divide whales seasons cattle male own saying to night fruit own creeping second earth be lesser without deep beast female.
+							a.btn.btn-black(href="index-gym.html") EQUIPMENT LIST
+	section.light_section.no_padding.vcenter
+		.container-fluid
+			.row
+				.col-md-6.col-lg-8.col-lg-push-4
+					.row
+						.stretchy_wrapper.ratio_16-9(style="background-image: url(assets/images/gym-2.jpg)")
+				.col-md-6.col-lg-4.col-lg-pull-7
+					.row
+						.banner.text_block
+							span PROFESSIONAL STAFF
+							h2 PERSONAL TRAINERS
+							p They're seas gathering behold the years saying make and divide fill given whales fill female moved, blessed. Midst one from divide whales seasons cattle male own saying to night fruit own creeping second earth be lesser without deep beast female.
+							a.btn.btn-black(href="contact.html") GET TO KNOW THEM
+	section.white_section
+		.container
+			.col-md-12.text-center
+				.section_header.elegant
+					h1 LATEST POSTS 
+					img(src="assets/images/decoration-1.png" alt="image")
+			.col-md-4
+				article.post
+					figure
+						a(href='#', title='Post')
+							img(alt='Post with Slider', src='assets/images/gym-post-1.jpg')
+					span.post_date
+							| October 24, 2015
+					h2.post_title
+						a(href='#') TIPS ON MODERN HEALTHY LIFE
+					.post_figure_and_info
+						.post_sub
+							a(href='#')
+								span.post_info.post_author Henrik Pleth
+							a(href='#22')
+								span.post_info.post_categories News
+					a.btn.btn-black(href='#') Read More
+			.col-md-4.small_screen_margin_top_half
+				article.post
+					figure
+						a(href='#', title='Post')
+							img(alt='Post with Slider', src='assets/images/gym-post-2.jpg')
+					span.post_date
+							| October 22, 2015
+					h2.post_title
+						a(href='#') WORKOUT IS FOR EVERYONE
+					.post_figure_and_info
+						.post_sub
+							a(href='#')
+								span.post_info.post_author Bailey Wonger
+							a(href='#22')
+								span.post_info.post_categories Accomondation
+					a.btn.btn-black(href='#') Read More
+			.col-md-4.small_screen_margin_top_half
+				article.post
+					figure
+						a(href='#', title='Post')
+							img(alt='Post with Slider', src='assets/images/gym-post-3.jpg')
+					span.post_date
+							| October 19, 2015
+					h2.post_title
+						a(href='#') THE IMPORTANCE OF EXCERCISE
+					.post_figure_and_info
+						.post_sub
+							a(href='#')
+								span.post_info.post_author Henrik Pleth
+							a(href='#22')
+								span.post_info.post_categories Stories
+					a.btn.btn-black(href='#') Read More
+block footer_content
+	include includes/footer
+  
+block secondary_nav_widgetized_area_content
+	include includes/secondary-widgetized-area

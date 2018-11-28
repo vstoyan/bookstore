@@ -1,0 +1,443 @@
+/* =Responsive: Very Large Desktops (Higher Part of LG)
+-------------------------------------------------------------- */
+@media only screen and (min-width: 1401px) {
+//------------------------------------------------------------   
+
+.vcenter div[class *="col-"] {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  margin-right: -4px;
+}
+
+.vbottom div[class *="col-"] {
+  display: inline-block;
+  vertical-align: bottom;
+  float: none;
+  margin-right: -4px;
+}
+
+
+//------------------------------------------------------------
+}
+
+/* =Responsive: Large Desktops (Lower 200px Part of LG)
+-------------------------------------------------------------- */
+@media (min-width: 1200px) and (max-width: 1400px) {
+//------------------------------------------------------------   
+
+.stretchy_wrapper.ratio_slider {padding-bottom: 40% !important;}
+
+.vcenter div[class *="col-"] {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  margin-right: -4px;
+}
+
+.vbottom div[class *="col-"] {
+  display: inline-block;
+  vertical-align: bottom;
+  float: none;
+  margin-right: -4px;
+}
+
+
+//------------------------------------------------------------
+}
+
+/* =Responsive: Medium devices (MD) Desktops
+-------------------------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+//------------------------------------------------------------   
+
+.menu_container ul.main_menu > li > a {
+  padding: @menu-item-vertical-padding-md @menu-item-horizontal-padding-md;
+} 
+
+.stretchy_wrapper.ratio_slider {padding-bottom: 50% !important;}
+
+.vcenter div[class *="col-"] {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  margin-right: -4px;
+}
+
+.vbottom div[class *="col-"] {
+  display: inline-block;
+  vertical-align: bottom;
+  float: none;
+  margin-right: -4px;
+}
+
+
+//------------------------------------------------------------
+}
+
+
+/* =Responsive: Small devices (SM) Tablets (Mobile Menu) 
+-------------------------------------------------------------- */
+@media only screen and (max-width: 991px) {
+//------------------------------------------------------------
+
+h1, .h1 { font-size: ceil((@font-size-h1 * 0.9)); }
+h2, .h2 { font-size: ceil((@font-size-h2 * 0.9)); }
+h3, .h3 { font-size: ceil((@font-size-h3 * 0.9)); }
+h4, .h4 { font-size: ceil((@font-size-h4 * 0.9)); }
+h5, .h5 { font-size: ceil((@font-size-h5 * 0.9)); }
+h6, .h6 { font-size: ceil((@font-size-h6 * 0.9)); }
+
+.stretchy_wrapper.ratio_slider {padding-bottom: 50% !important;}
+
+.logo {
+  margin: @logo-vertical-margin-sm 0;
+  a.brand {
+    font-size: @logo-font-size-sm;
+    img {
+      max-height: @logo-img-max-height-sm;
+    }  
+  }
+  p { font-size: 13px; }
+}
+
+label.mobile_collapser {
+  position: absolute;
+  top: 50%;
+  .translate(0, -50%);
+  right: 15px;
+  display: inline-block;
+  //display: block;
+  cursor: pointer;
+  color: @header-linkcolor;
+  text-align: right;
+  //margin: @menu-vertical-margin-sm 0;
+  margin: 0;
+  width: 80px;
+  padding: 15px 30px 15px 0;
+  //float: right;
+  font-size: @menu-font-size;
+  line-height: 1em;
+  //position: relative;
+  &:after {
+    content: '\2261';
+    display: block;
+    position: absolute;
+    font-size: 40px;
+    top: 13px;
+    right: -5px;
+  }
+}
+
+a.social_links {
+  right: 0px;
+  .translate(-100px, -50%);
+  z-index: 101;
+}
+
+span.close_menu {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 25px;
+    position: absolute;
+    margin: 13px 15px;
+    top: 0;
+    left: 0;
+    color: @header-linkcolor;
+    background-color: @brand-primary;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    display: block;
+}
+
+.menu_container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  float: none;
+  width: 250px;
+  margin: 0;
+  margin-right: 0 !important;
+  .translate(250px,0px);
+  background-color: @header-bgcolor;
+  padding: @menu-item-vertical-padding-sm*2+@menu-font-size*2 0;
+  border-left: solid 1px @brand-primary;
+  display: block;
+  overflow: auto;
+  &.collapsed {.translate(250px,0px);}
+  ul.main_menu {
+    border-top: solid 1px @brand-primary;
+    li {  
+      display: block;
+      float: none;
+      padding: 0;
+      margin: 0;
+      border-bottom: solid 1px @brand-primary;
+      a { padding: @menu-item-vertical-padding-sm @menu-item-horizontal-padding-sm; } 
+      &.lihasdropdown:after {
+        right: 10px;
+      }  
+      &.drop-left ul.menu-dropdown,
+      &.dropleft ul.menu-dropdown { 
+        right: inherit;
+        left: 0;
+      }
+      &.drop-right ul.menu-dropdown { //Default anyway
+        left: 0;
+      }
+      &.drop-mid ul.menu-dropdown { 
+        left: 0;
+      }
+      &.drop-mid.two_column ul.menu-dropdown { 
+        left: 0;
+      }          
+    }
+  }       
+}
+
+.menu_container ul.main_menu li ul.menu-dropdown {
+  padding: 0px;
+  top: 0;
+  height: 0;
+  min-height: inherit;
+  max-height: inherit;                
+  position: relative;
+  left: 0px;
+  overflow: hidden !important;
+  .translate(0 , -30px);
+  border: none;
+  &.show {
+    height: auto;
+    .translate(0 , 0px);
+  }
+  li {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0 0px;
+    border-bottom: solid 1px @header-linkcolor;
+    a {padding: 15px 20px;}
+    ul.menu-dropdown {
+      position: relative;
+      top: inherit;
+      width: 100%;
+      min-width: inherit;
+      left: inherit;   
+    }   
+  }                  
+}
+
+.menu_container ul.main_menu > li > ul.menu-dropdown > li {
+  &.sublihasdropdown ul.menu-dropdown > li > a {padding: 15px 30px; }
+  &.sublihasdropdown > a:after {
+    content: '\2023';
+    font-size: 20px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    color: @header-linkcolor;
+  }
+  &.sublihasdropdown > ul.menu-dropdown {
+    border: none !important;
+    top: 0px !important;
+  }
+}
+ 
+.menu_container ul.main_menu li.two_column.lihasdropdown,
+.menu_container ul.main_menu li.two-column.lihasdropdown {
+  ul {
+    width: inherit;
+    padding: 0;
+    li {
+      float: none;
+      width: 100%;
+      border-right: solid 0px;
+      &:nth-child(odd) {
+        clear: none;
+      }
+      ul {
+        width: 100%;
+        li {
+          float: none;
+          width: 100%;
+        }
+      }
+      &.sublihasdropdown > a:after {
+        right: 10px;
+      }  
+    }
+  }
+}
+
+/*** HEAD PANEL ***/
+
+.head_panel .slider_wrapper .caption {
+  left: 5%;
+  width: 90%;
+}
+.head_panel .slider_wrapper .caption.caption_left { left: 5%; }
+.head_panel .slider_wrapper .caption.caption_right { right: 5%; }
+
+.full_width_photo { min-height: @full-width-photo-min-panel-height-sm; }
+
+/*** MAP ***/
+
+.map { height: @map-panel-height-sm !important; }   
+
+/* TWITTER FEED */
+
+.twitter_feed_wrapper blockquote p { font-size     : 15px; } 
+
+/* NEWSLETTER FORMS */
+
+.newsletter_form .newsletter_input { width: 50%; display: inline-block;}
+
+.elevate { margin-top: 0px; }
+
+.svg_newsletter {
+  .newsletter_input {
+    margin: 0;    
+  }
+  .right_area {
+    .translate(0,0px);
+  }
+}
+
+footer.vbottom .widget.boxed { .translate(0,0); }      
+
+.close-handle {
+  padding : 20px;
+  right   : 10px;
+  top     : 10px;
+  &:after, &:before {
+    left  : 10px;
+    top   : 19px;
+    width : 20px;
+  }
+}   
+
+//------------------------------------------------------------
+}
+
+
+/* =Responsive: Extra small devices (XS) Phones
+-------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+//------------------------------------------------------------
+
+h1, .h1 { font-size: ceil((@font-size-h1 * 0.8)); }
+h2, .h2 { font-size: ceil((@font-size-h2 * 0.8)); }
+h3, .h3 { font-size: ceil((@font-size-h3 * 0.8)); }
+h4, .h4 { font-size: ceil((@font-size-h4 * 0.8)); }
+h5, .h5 { font-size: ceil((@font-size-h5 * 0.8)); }
+h6, .h6 { font-size: ceil((@font-size-h6 * 0.8)); }
+
+.stretchy_wrapper.ratio_slider {padding-bottom: 70% !important;}
+
+.logo {
+  margin: @logo-vertical-margin-xs 0;
+  a.brand {
+    font-size: @logo-font-size-xs;
+    img {
+      max-height: @logo-img-max-height-xs;
+    }  
+  }
+  p { font-size: 12px; }
+}
+
+/*** HEAD PANEL ***/
+
+.full_width_photo { min-height: @full-width-photo-min-panel-height-xs; }
+
+.caption {
+  .inner {          
+    .t1 { font-size: 50px; } 
+    .t2 { font-size: 28px; }
+    .t3 { font-size: 20px;}       
+    p.desc { font-size: 15px; }
+  }
+}
+
+// Fancy Caption
+.caption.caption_fancy .inner {
+  .t1 { font-size: 50px; }
+  .t2 { font-size: 28px; }
+  .t3 { font-size: 20px; }
+  p.desc { font-size: 15px; }
+}
+
+// Flat Caption
+.caption.caption_flat .inner {
+  .t1 { font-size : 36px; }
+  .t2 {margin-bottom: 20px;}
+  p.desc { font-size: 18px; }
+}
+
+.map { height: @map-panel-height-xs !important; }   
+
+.newsletter_form .newsletter_input { width: 69%; display: inline-block;}
+.newsletter_form button.form-control {display: inline-block; width: auto;}
+
+.pricing_plan { margin-bottom: 10px; }
+
+.owl-nav { visibility: hidden; }
+
+.copyright div { text-align: center; }
+
+//------------------------------------------------------------
+}
+
+
+/* =Responsive: Small Phones (XXS)
+-------------------------------------------------------------- */
+@media only screen and (max-width: 480px) {
+//------------------------------------------------------------
+
+.stretchy_wrapper.ratio_slider {padding-bottom: 80% !important;}
+
+.hidden-xxs {display: none;}
+
+.menu_container > ul.collapsed > li {
+  width: 100% !important;
+border-right: solid 0px #cccccc !important;
+&:last-child {
+border-bottom: solid 0px red !important;   
+    }  
+}
+
+.newsletter_form .newsletter_input { width: 100%; display: block;}
+.newsletter_form button.form-control {display: block; margin-bottom: 20px; }
+
+.section_header.fancy {
+  h2 {font-size: @font-size-h2 * 1.5;}
+  h3 {font-size: @font-size-h3 * 1.5; }
+  h4 {font-size: @font-size-h4 * 1.5; }
+  h5 {font-size: @font-size-h5 * 1.5; }
+  h6 {font-size: @font-size-h6 * 1.5; }         
+}
+
+}
+//------------------------------------------------------------
+
+/* =Responsive: Small Phones (XXXS)
+-------------------------------------------------------------- */
+@media only screen and (max-width: 320px) {
+//------------------------------------------------------------
+
+.stretchy_wrapper.ratio_slider {padding-bottom: 100% !important;}
+
+.hidden-xxxs {display: none;}
+
+}
+//------------------------------------------------------------
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+.menu_container.collapsed {.translate(0px,0px);}
+}

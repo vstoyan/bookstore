@@ -1,0 +1,206 @@
+/*!
+ ______ _____   _______ _______ _______ _______ ______ _______ 
+|   __ \     |_|    ___|_     _|   |   |       |   __ \   _   |
+|    __/       |    ___| |   | |       |   -   |      <       |
+|___|  |_______|_______| |___| |___|___|_______|___|__|___|___|
+
+P L E T H O R A T H E M E S . C O M               (c) 2015-2016
+                        
+Theme Name: GRACE HTML
+THEME's VARIABLES v.1.0
+=============================================================== 
+*/
+
+//== General Colors
+
+@brand-primary: #6FB586; //wp // This is your Brand's Primary Color. Should be different and in contrast with the body background. // #45aaff; // #428bca
+@brand-secondary: #171720; //wp // Used as complementary color to the primary.
+
+@brand-success: #2ecc71;
+@brand-info: #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger: #d9534f;
+
+@body-bg: #f4f4f4; //wp 
+@text-color: #111118; //wp
+
+@link-color: @brand-primary; //wp
+@link-hover-color: darken(@link-color, 15%); //wp
+@link-hover-decoration: none;
+
+//== Sections Colors
+
+@logo-txtcolor: @header-txtcolor;
+
+//@header-bgcolor         : fade(@brand-secondary, 40%); //wp
+@header-bgcolor         : @brand-secondary; //wp
+@header-linkcolor       : lighten(#849191, 50%); //wp
+@header-linkcolor-hover : #ffffff; //wp
+@header-txtcolor        : #ffffff; //wp
+
+@secondary-nav-widgetized-area-bgcolor: #111118;
+
+@primary-section-bgcolor         : darken(@brand-primary,15%); // pletodo: add primary section on medicus and keep skin there for backwards compatibility
+@primary-section-linkcolor       : #fdfdfd; //wp
+@primary-section-linkcolor-hover : lighten(@primary-section-linkcolor, 15%); //wp
+@primary-section-txtcolor        : #fdfdfd; //wp
+
+@secondary-section-bgcolor         :@brand-secondary;
+@secondary-section-linkcolor       : @brand-primary; //wp
+@secondary-section-linkcolor-hover : lighten(@secondary-section-linkcolor, 15%); //wp
+@secondary-section-txtcolor        : #ffffff; //wp
+
+@light-section-bgcolor         : #f4f4f4; //wp
+@light-section-linkcolor       : #323232; //wp
+@light-section-linkcolor-hover : @brand-primary; //wp
+@light-section-txtcolor        : #323232; //wp
+
+@dark-section-bgcolor         : #111118; //wp
+@dark-section-linkcolor       : @brand-primary; //wp
+@dark-section-linkcolor-hover : darken(@dark-section-linkcolor, 15%); //wp
+@dark-section-txtcolor        : #ffffff; //wp
+
+@white-section-bgcolor         : #ffffff; //wp
+@white-section-linkcolor       : @brand-primary; //wp
+@white-section-linkcolor-hover : darken(@white-section-linkcolor, 15%); //wp
+@white-section-txtcolor        : #323232; //wp
+
+@black-section-bgcolor         : #000000; //wp // You might want to lighten your Black a little :)
+@black-section-linkcolor       : @brand-primary; //wp
+@black-section-linkcolor-hover : darken(@black-section-linkcolor, 15%); //wp
+@black-section-txtcolor        : #ffffff; //wp
+
+@footer-bgcolor         : lighten(#111118, 2%); //wp
+@footer-linkcolor       : @brand-primary; //wp
+@footer-linkcolor-hover : lighten(@footer-linkcolor, 5%); //wp
+@footer-txtcolor        : #fdfdfd; //wp
+
+@form-field-bg: #fdfdfd;
+@form-field-txt: #111118;
+
+//== Buttons Colors
+
+@btn-default-bg: @body-bg;
+@btn-default-txt: @body-bg;
+@btn-default-txt-hover: #fdfdfd;
+
+@btn-secondary-bg: #171720;
+@btn-secondary-txt: #171720;
+@btn-secondary-txt-hover: #fdfdfd;
+
+@btn-primary-bg: #6FB586;
+@btn-primary-txt: #6FB586;
+@btn-primary-txt-hover: #fdfdfd;
+
+@btn-warning-bg: #f0ad4e;
+@btn-warning-txt: #f0ad4e;
+@btn-warning-txt-hover: #fdfdfd;
+
+@btn-success-bg: #2ecc71;
+@btn-success-txt: #2ecc71;
+@btn-success-txt-hover: #fdfdfd;
+
+@btn-white-bg: #fdfdfd;
+@btn-white-txt: #fdfdfd;
+@btn-white-txt-hover: #111118;
+
+@btn-black-bg: #000;
+@btn-black-txt: #000;
+@btn-black-txt-hover: #fdfdfd;
+
+@btn-info-bg: #5bc0de;
+@btn-info-txt: #5bc0de;
+@btn-info-txt-hover: #fdfdfd;
+
+@btn-danger-bg: #d9534f;
+@btn-danger-txt: #d9534f;
+@btn-danger-txt-hover: #fdfdfd;
+
+@link-hover-color: @link-color;
+
+//== Transparencies
+
+@section-background-transparency: 30; //wp
+@header-background-transparency: 40; //wp
+
+//== Typography
+
+@font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; //wp
+@font-family-alternative: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif; //wp
+
+@font-size-base:          			  16px;  //wp // Used as a base for the @font-family-sans-serif (body and p)
+@font-size-alternative-base:          16px;  //wp // Used as a base for the @font-family-alternative (Logo, Menu, Headings, Buttons)
+@font-size-large:         ceil((@font-size-base * 1.1));
+@font-size-small:         ceil((@font-size-base * 0.8));
+
+@font-size-h1:            floor((@font-size-alternative-base * 2.6));
+@font-size-h2:            floor((@font-size-alternative-base * 1.9));
+@font-size-h3:            floor((@font-size-alternative-base * 1.6));
+@font-size-h4:            floor((@font-size-alternative-base * 1.2));
+@font-size-h5:            @font-size-alternative-base;
+@font-size-h6:            ceil((@font-size-alternative-base * 0.85));
+
+@line-height-base:        1.5; 
+@line-height-large:       1.33;
+@line-height-small:       1.6;
+@line-height-computed:    floor((@font-size-base * @line-height-base)); 
+
+@headings-font-family:    @font-family-alternative;
+@headings-text-transform: uppercase;  //wp 
+@headings-font-weight:    normal;  //wp 
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+@btn-font-family:         @font-family-alternative;
+@btn-font-weight:         bold;
+@btn-text-transform:      uppercase;  //wp 
+@btn-font-size:         12px;
+
+@header-font-family:      @font-family-sans-serif;
+
+//== Layout
+
+@container-fluid-max-width: 1600px; //wp
+
+@full-width-photo-min-panel-height: 380px; //wp 
+@full-width-photo-min-panel-height-sm: 280px; //wp 
+@full-width-photo-min-panel-height-xs: 80px; //wp 
+
+@map-panel-height: 480px; //wp 
+@map-panel-height-sm: 380px; //wp 
+@map-panel-height-xs: 280px; //wp 
+
+@logo-vertical-margin: 24px; //wp 
+@logo-vertical-margin-sm: 24px; //wp 
+@logo-vertical-margin-xs: 24px; //wp 
+
+@logo-font-size: 26px; //wp 
+@logo-font-size-sm: 24px; //wp 
+@logo-font-size-xs: 22px; //wp 
+
+@logo-img-max-height: 50px; //wp 
+@logo-img-max-height-sm: 50px; //wp 
+@logo-img-max-height-xs: 50px; //wp 
+
+@menu-item-vertical-padding: 24px; //wp 
+@menu-item-vertical-padding-md: 10px; //wp 
+@menu-item-vertical-padding-sm: 15px; //wp 
+
+@menu-item-horizontal-padding:  24px; //wp 
+@menu-item-horizontal-padding-md: 10px; //wp 
+@menu-item-horizontal-padding-sm: 15px; //wp 
+
+@menu-font-size: .9em; //wp 
+
+@secondary-widgetized-area-width: 320px; // wp
+
+@section-vertical-padding: 96px; //wp
+@section-spacing-value: 48px;
+
+//== Core variables overrides
+
+@border-radius-base: 0;
+@border-radius-small: 0;
+@border-radius-large: 0;
+@padding-base-vertical: 8px; 
+@padding-base-horizontal: 24px;

@@ -1,0 +1,100 @@
+extends config/layout.jade
+
+//-====================================
+//- CONFIG-OVERRIDES: Add your settings here to override the defaults from config.jade
+block config
+	- var production        		= false
+	- var demoMode          		= false
+	- var jquery_1          		= false
+	- var page_title        		= "XENIA - Luxury hotel"
+	- var stylesheet        		= "style.css"
+	- var displayLogo       		= true
+	- var displayTools      		= false
+	- var headerClass       		= 'click_menu transparent'
+	- var logo_link        		= 'index.html'
+	- var header_nav_class  	= 'nav_centered uppercase transparent'
+	- var bodyClass         		= ''
+	- var bodyStyle        	 	= ""
+	- var pagewrapperClass  	= ''
+	- var owlSlider         		= true
+	- var lightbox          		= false
+	- var beforeAfter       		= false
+	- var twitterFeed       		= false
+	- var googleMaps        		= false
+	- var isotope           		= true
+	- var ajaxLoader        		= false
+	- var newsletter        		= false
+	- var parallax          		= true
+	- var easing            		= false
+	- var wowAnimation     		= true
+	- var contactForm       		= false
+//-====================================
+
+block header_content
+	include includes/header  
+
+block main_content
+	.head_panel
+		.full_width_photo.vertical_center.parallax-window.bg_vbottom.padding_top_half.transparent_film(style="background-image: url(assets/images/home-location.jpg)")
+			.container
+				.row
+					.col-md-8.col-md-offset-2.text-center
+						.caption.caption_elegant
+							.inner
+								.t3.uppercase  A MAGIC PLACE
+								.t1 
+									h1 OUR RESORT'S LOCATION
+	section.white_section
+		.container
+			.col-md-12.text-center
+				.section_header.minimal
+					//-h1 XENIA'S SECRET LOCATION
+					p Our location is <strong>outstanding</strong>. Us lesser doesn't them tree night, creature itself second gathered good moving Image saying which itself of she'd gathering thing. Creepeth.
+					img(src="assets/images/decoration-1.png")
+			.col-md-10.col-md-offset-1.text-center.margin_bottom
+				.video_iframe.stretchy_wrapper.ratio_16-9
+					iframe(src='https://player.vimeo.com/video/139547127?color=111118&title=0&byline=0&portrait=0' height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+	section.light_section.no_padding.vcenter
+		.container-fluid
+			.row
+				.col-md-6.col-lg-8
+					.row
+						.stretchy_wrapper.ratio_16-9(style="background-image: url(assets/images/location-1.jpg)")
+				.col-md-6.col-lg-4.col-lg-pull-1
+					.row
+						.banner.text_block
+							span CLUBS &amp; BARS
+							h2 NIGHTLIFE
+							p They're seas gathering behold the years saying make and divide fill given whales fill female moved, blessed. Midst one from divide whales seasons cattle male own saying to night fruit own creeping second earth be lesser without deep beast female.
+							a.btn.btn-black(href="index.html") CITY GUIDE
+	section.light_section.no_padding.vcenter
+		.container-fluid
+			.row
+				.col-md-6.col-lg-8.col-lg-push-4
+					.row
+						.stretchy_wrapper.ratio_16-9(style="background-image: url(assets/images/location-2.jpg)")
+				.col-md-6.col-lg-4.col-lg-pull-7
+					.row
+						.banner.text_block
+							span HISTORICAL SIGHTS
+							h2 MUSEUM
+							p They're seas gathering behold the years saying make and divide fill given whales fill female moved, blessed. Midst one from divide whales seasons cattle male own saying to night fruit own creeping second earth be lesser without deep beast female.
+							a.btn.btn-black(href="booking.html") BOOK A TRIP
+	section.light_section.no_padding.vcenter
+		.container-fluid
+			.row
+				.col-md-6.col-lg-8
+					.row
+						.stretchy_wrapper.ratio_16-9(style="background-image: url(assets/images/location-3.jpg)")
+				.col-md-6.col-lg-4.col-lg-pull-1
+					.row
+						.banner.text_block
+							span WIND &AMP; SEA SPORTS
+							h2 EXOTIC BEACH
+							p They're seas gathering behold the years saying make and divide fill given whales fill female moved, blessed. Midst one from divide whales seasons cattle male own saying to night fruit own creeping second earth be lesser without deep beast female.
+							a.btn.btn-black(href="index.html") CITY GUIDE
+block footer_content
+	include includes/footer
+  
+block secondary_nav_widgetized_area_content
+	include includes/secondary-widgetized-area

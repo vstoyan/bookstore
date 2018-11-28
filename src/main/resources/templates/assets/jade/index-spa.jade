@@ -1,0 +1,167 @@
+extends config/layout.jade
+
+//-====================================
+//- CONFIG-OVERRIDES: Add your settings here to override the defaults from config.jade
+block config
+	- var production        		= false
+	- var demoMode          		= false
+	- var jquery_1          		= false
+	- var page_title        		= "XENIA - Luxury hotel"
+	- var stylesheet        		= "style.css"
+	- var displayLogo       		= true
+	- var displayTools      		= false
+	- var headerClass       		= 'click_menu transparent'
+	- var logo_link        		= 'index.html'
+	- var header_nav_class  	= 'nav_centered uppercase transparent'
+	- var bodyClass         		= ''
+	- var bodyStyle        	 	= ""
+	- var pagewrapperClass  	= ''
+	- var owlSlider         		= true
+	- var lightbox          		= false
+	- var beforeAfter       		= false
+	- var twitterFeed       		= false
+	- var googleMaps        		= false
+	- var isotope           		= true
+	- var ajaxLoader        		= false
+	- var newsletter        		= false
+	- var parallax          		= true
+	- var easing            		= false
+	- var wowAnimation     		= true
+	- var contactForm       		= false
+//-====================================
+
+block header_content
+	include includes/header  
+
+block main_content
+	.head_panel
+		.full_width_photo.vertical_center.parallax-window.bg_vbottom.padding_top_half.transparent_film(style="background-image: url(assets/images/home-spa.jpg)")
+			.container
+				.row
+					.col-md-8.col-md-offset-2.text-center
+						.caption.caption_elegant
+							.inner
+								.t3.uppercase  XENIA'S SPA
+								.t1 RELAX &amp; REJUVENATE
+	section.light_section
+		.container
+			.col-md-12.text-center
+				.section_header.overlay
+					span TREATMENTS
+					h1 SPA CENTER PACKAGES
+					p CAREFULLY CRAFTED SETS OF RELAXATION 
+					img(src="assets/images/decoration-1.png" alt="Image")
+			.col-md-6
+				figure
+					a.linkify(href="spa_treatment_details.html")
+						img(src="assets/images/spa-service-1.jpg" alt="Image")
+				.text_block
+					span $70
+					a.linkify(href="spa_treatment_details.html")
+						h3 Aromatherapy
+					p Seas wherein wherein deep, very don't. Which also creeping. Light. Can't he made likeness. Together itself you rule is face appear, dry good. Years divide him female blessed light.
+					div.inline_block
+						i.icon.icon-Timer
+						p 40 minutes
+			.col-md-6
+				figure
+					a.linkify(href="spa_treatment_details.html")
+						img(src="assets/images/spa-service-2.jpg" alt="Image")
+				.text_block
+					span $80
+					a.linkify(href="spa_treatment_details.html")
+						h3 Rejuvenating Facial
+					p Seas wherein wherein deep, very don't. Which also creeping. Light. Can't he made likeness. Together itself you rule is face appear, dry good. Years divide him female blessed light.
+					div.inline_block
+						i.icon.icon-Timer
+						p 30 minutes
+			.col-md-6
+				figure
+					a.linkify(href="spa_treatment_details.html")
+						img(src="assets/images/spa-service-3.jpg" alt="Image")
+				.text_block
+					span $50
+					a.linkify(href="spa_treatment_details.html")
+						h3 Radicals Treatment
+					p Seas wherein wherein deep, very don't. Which also creeping. Light. Can't he made likeness. Together itself you rule is face appear, dry good. Years divide him female blessed light.
+					div.inline_block
+						i.icon.icon-Timer
+						p 25 minutes
+			.col-md-6
+				figure
+					a.linkify(href="spa_treatment_details.html")
+						img(src="assets/images/spa-service-4.jpg" alt="Image")
+				.text_block
+					span $100
+					a.linkify(href="spa_treatment_details.html")
+						h3 Puffiness Treatment
+					p Seas wherein wherein deep, very don't. Which also creeping. Light. Can't he made likeness. Together itself you rule is face appear, dry good. Years divide him female blessed light.
+					div.inline_block
+						i.icon.icon-Timer
+						p 50 minutes
+	section.dark_section.text-center.background_cover.bg_vbottom.transparent_film(style="background-image: url(assets/images/spa-banner-1.jpg);")
+		.container					
+			.col-md-8.col-md-offset-2.margin_top_half
+				.text_block
+					h2 YOU'R GREAT ESCAPE
+					p We believe that in order to experience the full experience of relaxed vacation, it is essential to let your self completely stress-free and feel another level of relaxation. Xenia's resort Spa is a place which you can easily accomplish that.
+					a.btn.btn-white(href="booking.html") BOOK NOW
+	section.light_section
+		.container
+			.col-md-12.text-center
+				.section_header.elegant
+					h1 LATEST POSTS 
+					img(src="assets/images/decoration-1.png" alt="Image")
+			.col-md-4
+				article.post
+					figure
+						a(href='#', title='Post')
+							img(alt='Post', src="assets/images/spa-post-1.jpg")
+					span.post_date
+							| October 24, 2015
+					h2.post_title
+						a(href='#') Relaxing is essential
+					.post_figure_and_info
+						.post_sub
+							a(href='#')
+								span.post_info.post_author Henrik Pleth
+							a(href='#22')
+								span.post_info.post_categories News
+					a.btn.btn-primary(href='#') Read More
+			.col-md-4.small_screen_margin_top_half
+				article.post
+					figure
+						a(href='#', title='Post')
+							img(alt='Post', src="assets/images/spa-post-2.jpg")
+					span.post_date
+							| October 22, 2015
+					h2.post_title
+						a(href='#') A warming interior spa
+					.post_figure_and_info
+						.post_sub
+							a(href='#')
+								span.post_info.post_author Bailey Wonger
+							a(href='#22')
+								span.post_info.post_categories Accomondation
+					a.btn.btn-primary(href='#') Read More
+			.col-md-4.small_screen_margin_top_half
+				article.post
+					figure
+						a(href='#', title='Post')
+							img(alt='Post', src="assets/images/spa-post-3.jpg")
+					span.post_date
+							| October 19, 2015
+					h2.post_title
+						a(href='#') Brand new jacuzzi room
+					.post_figure_and_info
+						.post_sub
+							a(href='#')
+								span.post_info.post_author Henrik Pleth
+							a(href='#22')
+								span.post_info.post_categories Stories
+					a.btn.btn-primary(href='#') Read More
+block footer_content
+	include includes/footer
+  
+block secondary_nav_widgetized_area_content
+	include includes/secondary-widgetized-area

@@ -1,0 +1,39 @@
+"Request must come from Ajax"
+
+"Input fields are empty!"
+
+"Please enter a valid email!"
+
+"Too short message! Please enter something."
+
+"Thank you ...! Your message was successfully sent." (... -> SOME NAME)
+
+"Could not send mail! Please check your PHP mail configuration."
+
+"Thank you ...! Your message was successfully sent." (... -> SOME NAME)
+
+"This message was sent from ..." (... -> YOURCOMPANY)
+
+"New message from ..."
+
+"Invalid captcha!"
+
+"New Appointment for Mrs/Mr ..." (... -> SOME NAME)
+
+"Department: ..." (... -> MEDICAL DEPARTMENT)
+
+"Scheduled for: 05/05/2015"
+
+"CLIENT INFORMATION:"
+
+"Birth Date: ..."
+
+"Sex: ..." (... -> Male/Female)
+
+"Email Address:"
+
+"Phone Number"
+
+"Client Message:"
+
+"This message was sent from ... " (... -> WEBSITE NAME)

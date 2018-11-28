@@ -1,0 +1,20 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+block config
+//-====================================
+doctype html
+html(lang="en")
+  head
+    include head
+  body(class="#{bodyClass}", style="#{bodyStyle}")
+    #page_wrapper(class="#{pagewrapperClass}")
+      div(class="header #{headerClass}")
+        block header_content
+      block head_panel    
+      .main            
+        block main_content
+      block footer_content    
+      .secondary_nav_widgetized_area 
+        block secondary_nav_widgetized_area_content  
+    include scripts

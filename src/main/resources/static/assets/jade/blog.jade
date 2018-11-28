@@ -1,0 +1,151 @@
+extends config/layout.jade
+
+//-====================================
+//- CONFIG-OVERRIDES: Add your settings here to override the defaults from config.jade
+block config
+	- var production                = false
+	- var demoMode                  = false
+	- var jquery_1                  = false
+	- var page_title                = "XENIA - Luxury hotel"
+	- var stylesheet                = "style.css"
+	- var displayLogo               = true
+	- var displayTools              = false
+	- var headerClass               = 'click_menu transparent'
+	- var logo_link             = 'index.html'
+	- var header_nav_class      = 'nav_centered uppercase transparent'
+	- var bodyClass                 = ''
+	- var bodyStyle             = ""
+	- var pagewrapperClass      = ''
+	- var owlSlider                 = true
+	- var lightbox                  = false
+	- var beforeAfter               = false
+	- var twitterFeed               = false
+	- var googleMaps                = false
+	- var isotope                   = true
+	- var ajaxLoader                = false
+	- var newsletter                = false
+	- var parallax                  = false
+	- var easing                    = false
+	- var wowAnimation          = true
+	- var contactForm               = false
+//-====================================
+
+block header_content
+	include includes/header  
+
+block main_content
+	.head_panel
+		.full_width_photo.transparent_film(style="background-image: url('./assets/images/page-head-4.jpg')")
+			.container
+				.caption
+					h1 BLOG
+					span News from our Xenia family, in a different layout
+	section.light_section
+		.container
+			.row
+				.col-md-12.text-left
+					ul.breadcrumb
+						li
+							a(href="#!") HOME
+						li
+							span BLOG
+				.col-md-8
+					.post-grid.border-right.masonry.boxed_child
+						article.post
+							figure
+								a(href='single.html', title='Post')
+									img(alt='Post with Slider', src='assets/images/blog-classic-2.jpg')
+								.blog_bg_light
+									span.post_date
+											| October 22, 2015
+									h2.post_title
+										a(href='single.html') King suite reconstruction
+									//- p.post_subtitle
+									//-     | You can make a big difference with healthy lifestyle changes.
+									.post_figure_and_info
+										.post_sub
+											a(href='#')
+												span.post_info.post_author Henrik Pleth
+											a(href='#22')
+												span.post_info.post_categories Suites
+											a(href='#')
+												span.post_info.post_comment
+													i.fa.fa-comment
+													| 12  
+									p.text-justify
+										| The image is put here as is. While it seems like an easy task, swallowing a pill is something that many adults and children have great difficulty doing. The fear of gagging causes the throat to tighten up so that pill stays in your mouth until you spit it out. Fortunately, there are various ways to approach the problem so that you can relax, overcome the fear of choking, and just let the pill easily slide down. It's like riding a bike - once you get the hang of it, it becomes second nature.
+									a.btn.btn-primary(href='single.html') Read More
+						hr
+						article.post
+							figure
+								a(href='single.html', title='Post')
+									img(alt='Post with Slider', src='assets/images/blog-classic-1.jpg')
+								.blog_bg_light
+									span.post_date
+											| October 15, 2015
+									h2.post_title
+										a(href='single.html') Rooms with pool view!
+									//- p.post_subtitle
+									//-     | You can make a big difference with healthy lifestyle changes.
+									.post_figure_and_info
+										.post_sub
+											a(href='#')
+												span.post_info.post_author Lurch Schpellchek
+											a(href='#22')
+												span.post_info.post_categories News
+											a(href='#')
+												span.post_info.post_comment
+													i.fa.fa-comment
+													| 12  
+									p.text-justify
+										| The image is put here as is. While it seems like an easy task, swallowing a pill is something that many adults and children have great difficulty doing. The fear of gagging causes the throat to tighten up so that pill stays in your mouth until you spit it out. Fortunately, there are various ways to approach the problem so that you can relax, overcome the fear of choking, and just let the pill easily slide down. It's like riding a bike - once you get the hang of it, it becomes second nature.
+									a.btn.btn-primary(href='single.html') Read More
+						hr
+						article.post
+							figure
+								a(href='single.html', title='Post')
+									img(alt='Post with Slider', src='assets/images/blog-classic-3.jpg')
+								.blog_bg_light
+									span.post_date
+											| October 9, 2015
+									h2.post_title
+										a(href='single.html') Quality services
+									//- p.post_subtitle
+									//-     | You can make a big difference with healthy lifestyle changes.
+									.post_figure_and_info
+										.post_sub
+											a(href='#')
+												span.post_info.post_author Parsley Montana
+											a(href='#22')
+												span.post_info.post_categories Stories
+											a(href='#')
+												span.post_info.post_comment
+													i.fa.fa-comment
+													| 12  
+									p.text-justify
+										| The image is put here as is. While it seems like an easy task, swallowing a pill is something that many adults and children have great difficulty doing. The fear of gagging causes the throat to tighten up so that pill stays in your mouth until you spit it out. Fortunately, there are various ways to approach the problem so that you can relax, overcome the fear of choking, and just let the pill easily slide down. It's like riding a bike - once you get the hang of it, it becomes second nature.
+									a.btn.btn-primary(href='single.html') Read More
+							hr
+					.col-md-12.text-center
+						ul.pagination
+							li.disabled
+								a(href='#') &#x2190;
+							li.active
+								a(href='#') 1
+							li
+								a(href='#') 2
+							li
+								a(href='#') 3
+							li
+								a(href='#') 4
+							li
+								a(href='#') 5
+							li
+								a(href='#') &#x2192;
+				.col-md-4
+					include includes/sidebar
+block footer_content
+	include includes/footer
+  
+block secondary_nav_widgetized_area_content
+	include includes/secondary-widgetized-area

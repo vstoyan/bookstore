@@ -1,0 +1,303 @@
+.main {
+	position: relative;
+	.theme_transition;
+	z-index: 9;
+} 
+
+.main section {
+	position: relative;
+	background-color: @body-bg;
+	.background_cover;
+	padding-top: @section-vertical-padding;
+	padding-bottom: @section-vertical-padding;
+	&.no_padding { padding-top: 0; padding-bottom: 0; } // PLETODO: Deprecate
+	&.no_top_padding { padding-top: 0; }
+	&.no_bottom_padding { padding-bottom: 0; }
+	&.no_cols_padding { 
+		div[class *="col-"] {  
+			padding-left: 0;
+			padding-right: 0;
+		}
+		// &.vcenter {
+		//     div[class *="col-"] {  
+		//         margin-right: 0px !important;
+		//     }
+		// }
+	}
+	&.short_padding {
+		padding-top: @section-vertical-padding / 2;
+		padding-bottom: @section-vertical-padding / 2;
+	}
+	&.full_width > .container {  width: 100%; }//padding: 0; }
+	div[class *="col-"] { .background_cover; }
+}
+
+.main section:nth-child(1) {
+	padding-top: 148px;
+}
+
+.main section .container .container {
+	width: inherit;
+	padding: 0;
+}
+
+.section_header {
+	font-family : @font-family-alternative;
+	margin      : 0 0 24px 0 !important;
+	position: relative;
+	img { 
+		margin: 10px 0 0px 0; 
+		width: 160px;
+	}
+	small { display: block; }
+	.btn { margin-top: 10px; }
+	&.centered { text-align: center; }
+	&.xbold {
+		h1, h2, h3, h4, h5, h6 { font-weight: 900; margin: 0 0 3px 0; }
+		p {
+			font-size   : floor((@font-size-base * 1.1));
+			font-weight : normal;
+			line-height : 1.4em;
+			font-family : @font-family-sans-serif;
+		}
+	}
+	&.fancy {
+		h2 {font-size: @font-size-h2 * 2; margin: 0!important;}
+		h3 {font-size: @font-size-h3 * 2; }
+		h4 {font-size: @font-size-h4 * 2; }
+		h5 {font-size: @font-size-h5 * 2; }
+		h6 {font-size: @font-size-h6 * 2; }
+		h2, h3, h4, h5, h6 { font-weight: 900; margin: 0 0 3px 0;}
+		p {
+			font-size   : floor((@font-size-alternative-base * 1.25));
+			line-height : 1.4em;
+			font-family : @font-family-sans-serif;
+		}
+	}
+	&.minimal {
+		h2 {font-size: floor((@font-size-h2 * 1.25)); margin: 0!important;}
+		h3 {font-size: floor((@font-size-h3 * 1.25)); }
+		h4 {font-size: floor((@font-size-h4 * 1.25)); }
+		h5 {font-size: floor((@font-size-h5 * 1.25)); }
+		h6 {font-size: floor((@font-size-h6 * 1.25)); }
+		h1,h2, h3, h4, h5, h6 { font-weight: 700; margin: 0 0 3px 0;}
+		p {
+			font-size   : floor((@font-size-alternative-base * 1.2));
+			font-weight : 300;
+			line-height : 1.4em;
+			font-family : @font-family-sans-serif;
+			max-width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 24px;
+			@media (max-width: 768px) {
+				max-width: 100%;
+			}
+		}
+	}
+	&.elegant {
+		//.margin_bottom_half;
+		h2 {font-size: floor((@font-size-h2 * 1.5));}
+		h3 {font-size: floor((@font-size-h3 * 1.5)); }
+		h4 {font-size: floor((@font-size-h4 * 1.5)); }
+		h5 {font-size: floor((@font-size-h5 * 1.5)); }
+		h6 {font-size: floor((@font-size-h6 * 1.5)); }
+		h1,h2, h3, h4, h5, h6 { font-weight: 700; margin: 0 0 12px 0;}
+		p {
+			font-family : @font-family-sans-serif;
+			font-size   : floor((@font-size-base * 0.8));
+			font-weight : 300;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			font-size: 13px;
+			line-height : 1em;
+		}
+	}
+	&.overlay {
+		//.margin_bottom_half;
+		h2 {font-size: floor((@font-size-h2 * 1.5));}
+		h3 {font-size: floor((@font-size-h3 * 1.5)); }
+		h4 {font-size: floor((@font-size-h4 * 1.5)); }
+		h5 {font-size: floor((@font-size-h5 * 1.5)); }
+		h6 {font-size: floor((@font-size-h6 * 1.5)); }
+		h1,h2, h3, h4, h5, h6 { font-weight: 900; margin: 0 0 12px 0;}
+		p {
+			font-family : @font-family-sans-serif;
+			font-size   : floor((@font-size-base * 0.8));
+			font-weight : 400;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			font-size: 13px;
+			line-height : 1em;
+		}
+		span {
+			font-size: 140px;
+			position: absolute;
+			top: 24px;
+			left: 0;
+			right: 0;
+			line-height: 0 !important;
+			.click-disable;
+			opacity: .03;
+			@media (max-width:768px) {
+				display: none;
+			}
+		}
+	}
+		   
+}
+
+/*** SKINCOLORED SECTION (PRIMARY) ***/ 
+
+.primary_section,
+.main .primary_section,
+div[class*="_section"] .primary_section,
+section[class*="_section"] .primary_section,
+section[class*="_section"] div[class*="_section"] .primary_section {
+	background-color : @primary-section-bgcolor;
+	color            : @primary-section-txtcolor;
+	a:link, a:visited { color: @primary-section-linkcolor; }
+	a:hover, a:active { color: @primary-section-linkcolor-hover; }
+	a i { color: @primary-section-txtcolor; }
+}
+
+/*** SECONDARY COLORED SECTION ***/ 
+
+.secondary_section,
+.main .secondary_section,
+div[class*="_section"] .secondary_section,
+section[class*="_section"] .secondary_section,
+section[class*="_section"] div[class*="_section"] .secondary_section {
+	background-color : @secondary-section-bgcolor;
+	color            : @secondary-section-txtcolor;
+	a:link, a:visited { color: @secondary-section-linkcolor; }
+	a:hover, a:active { color: @secondary-section-linkcolor-hover; }
+	a i { color: @secondary-section-txtcolor; }
+}
+  
+/*** DARK SECTION ***/
+
+.dark_section,
+.main .dark_section,
+div[class*="_section"] .dark_section,
+section[class*="_section"] .dark_section,
+section[class*="_section"] div[class*="_section"] .dark_section {
+	background-color : @dark-section-bgcolor;
+	color            : @dark-section-txtcolor;
+	a:link, a:visited { color: @dark-section-linkcolor; }
+	a:hover, a:active { color: @dark-section-linkcolor-hover; }
+	a i { color: @dark-section-txtcolor; }
+	ul.breadcrumb li a {
+		color: @dark-section-txtcolor;
+		&:hover {
+			color: @dark-section-linkcolor;
+		}
+	}
+	span.previous_icon,
+	span.next_icon {
+		color: @dark-section-txtcolor;
+		&:hover {
+			color: @dark-section-linkcolor;
+		}
+	}
+	.pl_sidebar_menu ul li a {
+		color: @dark-section-txtcolor;
+		&:hover {
+			color: @dark-section-linkcolor-hover;
+		}
+	}
+	div i {
+		border-color: fade(@dark-section-txtcolor, 7%);
+	}
+}  
+
+/*** LIGHT SECTION ***/
+
+.light_section,
+.main .light_section,
+div[class*="_section"] .light_section,
+section[class*="_section"] .light_section,
+section[class*="_section"] div[class*="_section"] .light_section {
+	background-color : @light-section-bgcolor;
+	color            : @light-section-txtcolor;
+	a:link, a:visited { color: @light-section-linkcolor; }
+	a:hover, a:active { color: @light-section-linkcolor-hover; }
+	a i { color: @light-section-txtcolor; }
+	div i {
+		border-color: fade(@light-section-txtcolor, 7%);
+		&:hover {
+			border-color: fade(@light-section-txtcolor, 37%);
+		}
+	}
+	.room_details_icons div i {
+		border-color: fade(@light-section-txtcolor, 7%);
+		&:hover {
+			border-color: fade(@light-section-txtcolor, 37%);
+		}
+	}			
+}    
+
+/*** BLACK SECTION ***/
+
+.black_section,
+.main .black_section,
+div[class*="_section"] .black_section,
+section[class*="_section"] .black_section,
+section[class*="_section"] div[class*="_section"] .black_section {
+	background-color : @black-section-bgcolor;
+	color            : @black-section-txtcolor;
+	a:link, a:visited { color: @black-section-linkcolor; }
+	a:hover, a:active { color: @black-section-linkcolor-hover; }
+	a i { color: @black-section-txtcolor; }
+}
+
+/*** WHITE SECTION ***/
+
+.white_section,
+.main .white_section,
+div[class*="_section"] .white_section,
+section[class*="_section"] .white_section,
+section[class*="_section"] div[class*="_section"] .white_section {  
+	background-color : @white-section-bgcolor;
+	color            : @white-section-txtcolor;
+	a:link, a:visited { color: @white-section-linkcolor; }
+	a:hover, a:active { color: @white-section-linkcolor-hover; }
+	a i { color: @white-section-txtcolor; }
+	.owl-prev,
+	.owl-next {
+		color: @white-section-txtcolor !important;
+	}
+}
+
+/*** BODY-BACKGROUND SECTION ***/
+
+.body-bg_section,
+div[class*="_section"] .body-bg_section,
+section[class*="_section"] .body-bg_section,
+section[class*="_section"] div[class*="_section"] .body-bg_section  {  
+	background-color: @body-bg;
+	color: @text-color;
+	a:link, a:visited { color: @link-color; }
+	a:hover, a:active { color: @link-hover-color; }
+	a i { color: @text-color; }
+}
+
+/*** PARTICLES ***/
+
+.particles-js-container {
+	height   : 100%;
+	left     : 0;
+	margin   : 0;  
+	padding  : 0;
+	position : absolute;
+	top      : 0;
+	width    : 100%;
+}
+
+/*** COLUMN HEADER ***/
+
+.col_header {
+	font-weight   : 900;
+	margin-bottom : 20px;
+	margin-top: 0;
+}

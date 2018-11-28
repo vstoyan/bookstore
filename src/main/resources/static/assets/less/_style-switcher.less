@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+.style_switcher,
+.section_style_switcher {
+	position: fixed;
+	top: 100px;
+	left: -200px;
+	max-width: 250px;
+	z-index: 1000;
+	-webkit-transition: all 0.2s ease-in-out;
+  	transition: all 0.2s ease-in-out;
+	}
+
+.section_style_switcher {
+	position: absolute;
+	left: inherit;
+	right: -300px;
+	top: 0;
+	max-width: 350px;
+	right: -300px;
+}	
+
+.gear {
+	position: absolute;
+	top: 0;
+	right: -45px;
+	border-left: none;
+	border-radius: 0 6px 6px 0;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 25px;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	text-align: center;
+	}
+
+.style_switcher {
+	left: -200px;
+}
+
+.gear-unfolded {
+	left: 0;
+}
+
+.handler {
+	border-left: none;
+	border-radius: 0;
+	width: 35px;
+	float: left;
+	font-size: 20px;
+	padding: 0 10px;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	position: relative;
+	top: 100px;
+	}
+
+.handler-unfolded {
+	right: 0;
+}
+
+.downloader {
+	clear: both;
+	top: 105px;
+	background: rgba(20, 145, 20, 0.5);
+}
+
+.styles {
+	border-radius: 0 0px 6px 0;
+	width: 200px;
+	float: left;
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+	color: #fff;
+	}
+
+.inner_area {
+	border-radius: 0;
+	width: 300px;
+	float: left;
+	background-color: rgba(0,0,0,0.5);
+	padding: 0 10px 10px 10px;
+	color: #fff;
+	}	
+
+.inner_area a {
+	color: #fff;
+}
+
+.inner_area h5 {
+	margin: 10px 0;
+}		
+
+	
+.styles a:link, .styles a:visited {
+	color: #ccc;
+	}
+	
+.styles a:hover, .styles a:active {
+
+	}	
+
+.styles h6 {
+	font-size: 14px;
+	font-weight: 600;
+	border-bottom: solid 1px #ffffff;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	}
+
+.styles p {
+	font-size: 12px;
+	}
+
+.styles ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+.styles ul li {
+	cursor: pointer;
+
+	}
+	
+.styles ul li:hover {
+	font-weight: bold;
+	}
+	
+.styles ul li i {
+	margin-right: 5px;
+	}	
+	
+
+	
+			
+
+
+	
+
+
+
+
+.section_style_switcher a,
+ul.col_select li {
+    display: inline-block;
+    cursor: pointer;
+    margin: 3px;
+    padding: 3px;
+    font-size: 10px;
+    border: solid 1px #cccccc;
+}    
+
+.section_style_switcher a.on,
+ul.col_select li.on { border: solid 1px red; }
+
+
+section.bgimage {
+	background-image: url('../images/ontheroad.jpg');
+}
+
+.section_style_switcher hr {
+	margin: 3px 0;
+	padding: 0;
+}
+
+/* -------------------------------------------------- */
+
+ul.color_variations {
+	margin-bottom: 20px;
+	li {
+		display: inline-block;
+		font-size: 28px;
+		&.style-default i { color: #4EABF9; }
+		&.style-golden i { color: #A59C78; }
+		&.style-silver i { color: #9E9CA8; }
+		&.style-purple i { color: #997BC6; }	
+	}
+}
+
+

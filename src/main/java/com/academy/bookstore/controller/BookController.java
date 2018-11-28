@@ -6,11 +6,16 @@ import com.academy.bookstore.service.BookService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -47,8 +52,35 @@ public class BookController {
         return ResponseEntity.ok(bookService.findAll());
     }
 
-    @GetMapping("/welcome")
+    @GetMapping("/helloWorld")
     public String index() {
         return "index";
+    }
+
+    @GetMapping("/contact")
+    public ModelAndView test(Model model) {
+        model.addAttribute("book", new Book());
+        ModelAndView modelAndView = new ModelAndView("contact");
+        modelAndView.addObject("books", bookService.findAll());
+        return modelAndView;
+    }
+
+
+    @GetMapping("/booksView")
+    public ModelAndView getAllBooksForView() {
+        ModelAndView modelAndView = new ModelAndView("contact");
+        modelAndView.addObject("books", bookService.findAll());
+        return modelAndView;
+    }
+
+    @PostMapping("/addBook")
+        public String addBookFromView(@ModelAttribute("book") Book book, BindingResult bindingResult){
+        if (bindingResult.hasErrors()) {
+            for(ObjectError error: bindingResult.getAllErrors()){
+                System.out.println(error);
+            }
+        }
+        bookService.createBook(book);
+        return  "redirect:/contact";
     }
 }

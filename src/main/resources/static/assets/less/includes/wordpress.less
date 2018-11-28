@@ -1,0 +1,306 @@
+.aligncenter{ display:block;  margin:0 auto}
+.alignright{ float:right;  margin:10px 0 10px 10px}
+.alignleft{ float:left;  margin:10px 10px 10px 0}
+.floatleft{ float:left}
+.floatright{ float:right}
+.textcenter{ text-align:center}
+.textright{ text-align:right}
+.textleft{ text-align:left}
+.wp-caption,
+.gallery-caption {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  margin: 10px 10px 10px 0;
+  max-width: 100%;
+  text-align: center;
+  img{ margin:0;  padding:0;  border:0 none; max-width: 100%;height: auto!important;}
+  p.wp-caption-text{font-size:11px;  line-height:17px;  padding:15px;  margin:0}
+}
+.wp-smiley{margin:0 !important; max-height:1em}
+blockquote.left{margin-right:20px; text-align:right; margin-left:0; width:33%; float:left}
+blockquote.right{margin-left:20px; text-align:left; margin-right:0; width:33%; float:right}
+blockquote {
+    border-left: 5px solid @gray-light;
+    p {
+        font-size: @font-size-base * 1.25;
+        font-weight: 300;
+        line-height: 1.43;
+      }
+    }
+
+/* 
+ =Admin-bar Fix
+ -------------------------------------------------------------- 
+*/
+
+body.admin-bar.sticky_header .overflow_wrapper,
+body.admin-bar.sticky_header .header {
+    margin-top: 30px;
+}
+
+/* 
+ =Visual Composer Adjustments
+ -------------------------------------------------------------- 
+*/
+
+.vc_row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.wpb_row {
+  margin-bottom: 0px;
+}
+
+.wpb_single_image {  margin-bottom: 0 !important;  }
+
+.transparent_film.video > .vc_video-bg {
+  position: absolute;
+  z-index: -1;
+}
+
+/* 
+ =Widget Calendar
+ -------------------------------------------------------------- 
+*/
+
+#wp-calendar {width: 100%; }
+#wp-calendar caption { text-align: left; color: @text-color; margin-top: 0px; margin-bottom: 15px; }
+#wp-calendar thead { font-size: 10px; }
+#wp-calendar thead th { padding-bottom: 10px; text-align: center; }
+#wp-calendar tbody { color: lighten(@text-color, 30%); }
+#wp-calendar tbody td { background: transparent; border: 1px solid lighten(@text-color, 50%); text-align: center; padding:8px;}
+#wp-calendar tbody td:hover { color: @body-bg; background: @link-color; }
+#wp-calendar tbody td:hover a { color: @body-bg; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; }
+#wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
+
+/* 
+ =Widget TagCloud
+ -------------------------------------------------------------- 
+*/
+
+.tagcloud {
+  overflow: hidden;
+    a {
+        display: inline-block;
+        padding: 10px;
+        margin: 0 3px 3px 0;
+        font-weight: 300;
+        background-color: @link-color;
+        color: @body-bg;
+        &:hover {
+          background-color: @text-color;
+        }
+    }
+}
+
+/* 
+ =Widget Navs & Lists
+ -------------------------------------------------------------- 
+*/
+
+.widget_nav_menu,
+.widget_pages,
+.widget_archive,
+.widget_categories,
+.widget_meta,
+.widget_product_categories {
+  ul {
+      border-left: solid 3px @link-color;
+      list-style: none;
+      padding: 0;
+      overflow: hidden;
+      li {
+        a {
+          display: block;
+          font-weight: 600;
+          padding: 10px 20px;
+          border-bottom: solid 0px lighten(@text-color, 50%);
+          &:link, &:visited { color: @text-color; }
+          &:hover, &:active {
+            color: @body-bg;
+            background-color: @link-color;
+          }
+          span.label {
+                    position: relative;
+                    top: -2px;
+                 }
+        }
+        &.current-menu-item,
+        &.current_page_item,
+        &.current-cat {
+          > a {
+            background-color: @link-color;
+            &:link, &:visited {color: @body-bg;}
+          }
+        }
+        ul.sub-menu,
+        ul.children {
+          margin-top: 0px;
+          margin-left: 30px;
+          padding-top: 10px;
+          margin-bottom: 15px;
+          border-left: dashed 1px lighten(@text-color, 50%);
+          li {
+            a {
+              text-transform: none !important;
+              font-weight: 400;
+              border: solid 0px;
+              padding: 5px 15px;
+            }
+          }
+        }
+        &.menu-item-has-children,
+        &.page_item_has_children,
+        &.cat-parent  {
+          border-bottom: solid 1px lighten(@text-color, 50%);
+        }  
+      }
+  }
+}
+
+/* 
+ =Widget Flickr
+ -------------------------------------------------------------- 
+*/
+
+#latest-flickr-images {
+    ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        li {
+            list-style: none;
+            display: block;
+            float: left;
+            margin: 0 15px 15px 0px;
+            a {
+                display: block;
+                width: 70px;
+                height: 70px;
+                border: solid 1px #33333;
+                overflow: hidden;
+                border-radius: @border-radius-base;
+                opacity: 0.85;
+                &:hover {
+                    opacity: 1;
+                }
+                img {
+                    min-width: 70px;
+                    min-height: 70px;
+                    height: auto;
+                    max-width: 100%;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+/* 
+ =Comments
+ -------------------------------------------------------------- 
+*/
+
+.comment-form #comment {
+  margin-top: 20px;
+}
+
+/* 
+ =
+ -------------------------------------------------------------- 
+*/
+
+/* 
+ =
+ -------------------------------------------------------------- 
+*/
+
+/* 
+ =Cleanstart styles (have to go)
+ -------------------------------------------------------------- 
+*/
+
+
+.black_alpha(@alpha_percentage: 60%) {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, @alpha_percentage);
+} 
+
+.masonry {
+    .row > div {padding: 0 5px;}
+    &.row > div {padding: 0 5px;}
+    .portfolio_item {
+        text-align: center;
+        margin-bottom: 24px;
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            img {
+                max-width: 100%;
+                }
+            .overlay {
+                .opacity(0);
+                padding: 10px;
+                width: 100%;
+                height: 100%;
+                .skincolor_alpha(60%);
+                .theme_transition(200ms);
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                .desc {
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    text-align: center;
+                    margin: 10% 0;
+                    font-size: 13px;
+                    }
+                h3 {
+                    font-size: 18px;
+                    line-height: 22px;
+                    }    
+                span.cross {
+              display: block;
+              width: 40px;
+              height: 40px;
+              margin: 0 auto 10px auto;
+              position: relative;
+                &:before,
+                &:after {
+                  content: '';
+                  position: absolute;
+                  width: 100%;
+                  top: 20px;
+                  left: 0;
+                  height: 1px;
+                  background: #ffffff;
+                }
+                &:after {
+                  -webkit-transform: rotate(-90deg);
+                  -moz-transform: rotate(-90deg);
+                  transform: rotate(-90deg);
+                }
+            }
+                }    
+        &:hover {
+            .overlay {
+                color:#fff;
+                text-decoration: none;
+                .opacity(100) !important;
+                left: 0;
+                }
+                }
+        &.lightbox .overlay {
+            .black_alpha(30%);
+            }        
+            }
+        }
+    }    

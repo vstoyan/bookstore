@@ -1,0 +1,47 @@
+﻿"Request must come from Ajax"
+La richiesta deve venire da Ajax
+
+"Input fields are empty!"
+I campi sono vuoti
+
+"Please enter a valid email!"
+inserire email valido
+
+"Too short message! Please enter something."
+messaggio troppo corto!
+
+"Thank you ...! Your message was successfully sent." (SOME NAME)
+grazie  ….. ! il messaggio e’ stato spedito
+
+"Could not send mail! Please check your PHP mail configuration."
+impossibile inviare email! per cortesia verificare configurazione PHP 
+
+"Thank you ...! Your message was successfully sent." (SOME NAME)
+
+"This message was sent from ..." (YOURCOMPANY)
+Questo messaggio e’ stato spediti da…
+"New message from ..."
+Nuovo messaggio da…
+"Invalid captcha!"
+Codice non valido
+
+"New Appointment for Mrs/Mr ..." (SOME NAME)
+Nuovo appuntamento per Sig/SIG.ra
+"Department: ..." (MEDICAL DEPARTMENT)
+Reparto….
+"Scheduled for: 05/05/2015"
+Programmato per il : 
+"CLIENT INFORMATION:"
+Informazione cliente
+"Birth Date: ..."
+data di nascita
+"Sex: ..." (Male/Female)
+sesso ( maschio:femmina)
+"Email Address:"
+indirizzo email
+"Phone Number"
+numero di telefono
+"Client Message:"
+messagio del cliente
+"This message was sent from ... " (WEBSITE NAME)
+Questo messaggio e’ stato spedito da…

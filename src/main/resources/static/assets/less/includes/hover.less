@@ -1,0 +1,464 @@
+/*
+--------------------------------------------------------------  
+ 
+ELEMENTS HOVER
+
+-------------------------------------------------------------- 
+*/ 
+
+/* Custom Buttons */
+
+// Custom button 1
+
+.sweep-to-top-btn-white() {
+	.hacks();
+	position: relative;
+	.prefixed(transition-property, color);
+	.prefixed(transition-duration, @mediumDuration);
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: @btn-white-bg;
+		.prefixed(transform, scaleY(0));
+		.prefixed(transform-origin, 50% 100%);
+		.prefixed(transition-property, transform);
+		.prefixed(transition-duration, @mediumDuration);
+		.prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: @btn-white-txt-hover !important;
+		&:before {
+			.prefixed(transform, scaleY(1));
+		}
+	}
+}
+
+.sweep-to-top-btn-black() {
+	.hacks();
+	position: relative;
+	.prefixed(transition-property, color);
+	.prefixed(transition-duration, @mediumDuration);
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: @btn-black-bg;
+		.prefixed(transform, scaleY(0));
+		.prefixed(transform-origin, 50% 100%);
+		.prefixed(transition-property, transform);
+		.prefixed(transition-duration, @mediumDuration);
+		.prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: @btn-black-txt-hover !important;
+		&:before {
+			.prefixed(transform, scaleY(1));
+		}
+	}
+}
+
+.sweep-to-top-btn-success() {
+	.hacks();
+	position: relative;
+	.prefixed(transition-property, color);
+	.prefixed(transition-duration, @mediumDuration);
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: @btn-success-bg;
+		.prefixed(transform, scaleY(0));
+		.prefixed(transform-origin, 50% 100%);
+		.prefixed(transition-property, transform);
+		.prefixed(transition-duration, @mediumDuration);
+		.prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: @btn-success-txt-hover !important;
+		&:before {
+			.prefixed(transform, scaleY(1));
+		}
+	}
+}
+
+.sweep-to-top-btn-warning() {
+	.hacks();
+	position: relative;
+	.prefixed(transition-property, color);
+	.prefixed(transition-duration, @mediumDuration);
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: @btn-warning-bg;
+		.prefixed(transform, scaleY(0));
+		.prefixed(transform-origin, 50% 100%);
+		.prefixed(transition-property, transform);
+		.prefixed(transition-duration, @mediumDuration);
+		.prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: @btn-warning-txt-hover !important;
+		&:before {
+			.prefixed(transform, scaleY(1));
+		}
+	}
+}
+
+.sweep-to-top-btn-primary() {
+	.hacks();
+	position: relative;
+	.prefixed(transition-property, color);
+	.prefixed(transition-duration, @mediumDuration);
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: @btn-primary-bg;
+		.prefixed(transform, scaleY(0));
+		.prefixed(transform-origin, 50% 100%);
+		.prefixed(transition-property, transform);
+		.prefixed(transition-duration, @mediumDuration);
+		.prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: @btn-primary-txt-hover !important;
+		&:before {
+			.prefixed(transform, scaleY(1));
+		}
+	}
+}
+
+.sweep-to-top-btn-secondary() {
+	.hacks();
+	position: relative;
+	.prefixed(transition-property, color);
+	.prefixed(transition-duration, @mediumDuration);
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: @btn-secondary-bg;
+		.prefixed(transform, scaleY(0));
+		.prefixed(transform-origin, 50% 100%);
+		.prefixed(transition-property, transform);
+		.prefixed(transition-duration, @mediumDuration);
+		.prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: @btn-secondary-txt-hover !important;
+		&:before {
+			.prefixed(transform, scaleY(1));
+		}
+	}
+}
+
+.sweep-to-top-btn-default() {
+	.hacks();
+	position: relative;
+	.prefixed(transition-property, color);
+	.prefixed(transition-duration, @mediumDuration);
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: @btn-default-bg;
+		.prefixed(transform, scaleY(0));
+		.prefixed(transform-origin, 50% 100%);
+		.prefixed(transition-property, transform);
+		.prefixed(transition-duration, @mediumDuration);
+		.prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: @btn-default-txt-hover !important;
+		&:before {
+			.prefixed(transform, scaleY(1));
+		}
+	}
+}
+
+.sweep-to-top-btn-info() {
+	.hacks();
+	position: relative;
+	.prefixed(transition-property, color);
+	.prefixed(transition-duration, @mediumDuration);
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: @btn-info-bg;
+		.prefixed(transform, scaleY(0));
+		.prefixed(transform-origin, 50% 100%);
+		.prefixed(transition-property, transform);
+		.prefixed(transition-duration, @mediumDuration);
+		.prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: @btn-info-txt-hover !important;
+		&:before {
+			.prefixed(transform, scaleY(1));
+		}
+	}
+}
+
+.sweep-to-top-btn-danger() {
+	.hacks();
+	position: relative;
+	.prefixed(transition-property, color);
+	.prefixed(transition-duration, @mediumDuration);
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: @btn-danger-bg;
+		.prefixed(transform, scaleY(0));
+		.prefixed(transform-origin, 50% 100%);
+		.prefixed(transition-property, transform);
+		.prefixed(transition-duration, @mediumDuration);
+		.prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: @btn-danger-txt-hover !important;
+		&:before {
+			.prefixed(transform, scaleY(1));
+		}
+	}
+}
+
+// --------------
+
+/* Navigation Button */
+
+.underline-from-left() {
+	@duration: @mediumDuration;
+
+	.hacks();
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		right: 100%;
+		bottom: 0;
+		background: @activeColor;
+		height: 1px;
+		.prefixed(transition-property, "right");
+		.prefixed(transition-duration, @duration);
+		.prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		&:before {
+			right: 0;
+		}
+	}
+}
+
+// DEFAULT OPTIONS
+
+// Prefix for Hover class names
+@nameSpace: hvr;
+
+// Durations
+@fastDuration: .1s;
+@mediumDuration: .3s;
+@slowDuration: .5s;
+
+// Colors
+@primaryColor: #e1e1e1;
+@secondaryColor: #666;
+@highlightColor: #ccc;
+@activeColor: @brand-primary;
+@shadowColor: rgba(0, 0, 0, .6);
+
+// Speech bubbles options
+@tipWidth: 10px;  //the width of the speech bubble tip
+@tipHeight: 10px; //the height of the speech bubble tip
+@tipColor: @primaryColor;
+
+// Arrows options
+@spaceBetweenTextAndArrows: 2.2em;
+
+// Curl dimensions
+@curlWidth: 25px;
+@curlHeight: 25px;
+
+// Curl colors
+@revealAreaColor: white;    // reveal area behind the curl
+@curlLineColor: #aaa;       // crease line
+@curlTransitionColor: #ccc; // color transitioning from crease line to final color
+@curlLastColor: white;      // final color of the back of the curl
+
+// Browser Prefixes - Which CSS prefixes should be used?
+@webkit: true;
+@moz: false;
+@ms: false;
+@o: false;
+
+// Compile with or without classes
+@includeClasses: true;
+
+
+// prefix declarations
+.prefixed(@property, @value) {
+  & when (@webkit = true) {
+	-webkit-@{property}: @value;
+  }
+
+  & when (@moz = true) {
+	  -moz-@{property}: @value;
+  }
+
+  & when (@ms = true) {
+	  -ms-@{property}: @value;
+  }
+
+  & when (@o = true) {
+	  -o-@{property}: @value;
+  }
+
+  @{property}: @value;
+}
+
+// prefix keyframes
+.keyframes(@name; @content) {
+  & when (@webkit = true) {
+	@-webkit-keyframes @name {
+	  @content();
+	}
+  }
+
+  & when (@moz = true) {
+	  @-moz-keyframes @name {
+		  @content();
+	  }
+  }
+
+  & when (@ms = true) {
+	  @-ms-keyframes @name {
+		  @content();
+	  }
+  }
+
+  & when (@o = true) {
+	  @-o-keyframes @name {
+		  @content();
+	  }
+  }
+
+  @keyframes @name {
+	@content();
+  }
+}
+
+// As is often the case, some devices/browsers need additional code to get CSS to work
+// in the most desired way. These mixins are used to quickly drop in hacks for each element
+// Find out more here: https://github.com/IanLunn/Hover/wiki/Hacks-Explained
+
+.hardwareAccel() {
+	// Improve performance on mobile/tablet devices
+	.prefixed(transform, translateZ(0));
+}
+
+.improveAntiAlias() {
+	// Improve aliasing on mobile/tablet devices
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.fontSmooth() {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.forceBlockLevel() {
+	// Transforms need to be block-level to work
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.hacks() {
+	.forceBlockLevel();
+	.hardwareAccel();
+	.improveAntiAlias();
+	.fontSmooth();
+}

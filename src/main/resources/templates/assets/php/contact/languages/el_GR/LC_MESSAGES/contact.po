@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Medicus\n"
+"POT-Creation-Date: 2015-04-22 12:44+0200\n"
+"PO-Revision-Date: 2015-04-22 12:44+0200\n"
+"Last-Translator: \n"
+"Language-Team: PlethoraThemes <plethorathemes@gmail.com>\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: /Users/kostas/WebServer/html/medicus/assets/php/contact/\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: config.php:56 debug-locale.php:18
+msgid "Request must come from Ajax"
+msgstr "Η αίτηση πρέπει να προέρχεται από Ajax"
+
+#: config.php:57
+msgid "Input fields are empty!"
+msgstr "Τα πεδία είναι κενά!"
+
+#: config.php:58
+msgid "Please enter a valid email!"
+msgstr "Παρακαλούμε εισάγετε ένα έγκυρο email!"
+
+#: config.php:59
+msgid "Too short message! Please enter something."
+msgstr "Πολύ μικρό μήνυμα! Παρακαλούμε εισάγετε κάτι."
+
+#: config.php:60 config.php:62
+#, php-format
+msgid "Thank you %s! Your message was successfully sent."
+msgstr "Ευχαριστούμε %s! Το μήνυμά σας έχει αποσταλεί."
+
+#: config.php:61
+msgid "Could not send mail! Please check your PHP mail configuration."
+msgstr "Αποτυχία αποστολή email! Παρακαλούμε ελέγξτε τις PHP ρυθμίσεις για το mail."
+
+#: config.php:63
+#, php-format
+msgid "[This message was sent from %s ]"
+msgstr "[Αυτό το μήνυμα έχει σταλεί από %s ]"
+
+#: config.php:64
+msgid "New message from "
+msgstr "Νέο μήνυμα από"
+
+#: config.php:65
+msgid "Invalid captcha!"
+msgstr "Άκυρο captcha!"
+
+#: config.php:73
+#, php-format
+msgid "New Appointment for Mrs/Mr %s"
+msgstr "Νέο ραντεβού για την/τον Κα/Κ %s"
+
+#: config.php:74
+#, php-format
+msgid "Department: %s"
+msgstr "Τομέας: %s"
+
+#: config.php:75
+#, php-format
+msgid "Scheduled for: %s"
+msgstr "Ραντεβού για: %s"
+
+#: config.php:76
+msgid "CLIENT INFORMATION:"
+msgstr "ΣΤΟΙΧΕΙΑ ΠΕΛΑΤΗ:"
+
+#: config.php:77
+#, php-format
+msgid "Birth Date: %s"
+msgstr "Ημερομηνία γέννησης: %s"
+
+#: config.php:78
+#, php-format
+msgid "Sex: %s"
+msgstr "Φύλο: %s"
+
+#: config.php:79
+#, php-format
+msgid "Email Address: %s"
+msgstr "Διεύθυνση Email: %s"
+
+#: config.php:80
+#, php-format
+msgid "Phone Number: %s"
+msgstr "Τηλέφωνο: %s"
+
+#: config.php:81
+#, php-format
+msgid "Client Message: %s"
+msgstr "Μήνυμα Πελάτη: %s"
+
+#: config.php:82
+#, php-format
+msgid "[ This message was sent from %s ]"
+msgstr "[ Αυτό το μήνυμα έχει σταλεί από %s ]"
+
+#~ msgid "[This message was sent from "
+#~ msgstr "[Αυτό το μήνυμα εστάλει από"
+
+#~ msgid "[ This message was sent from "
+#~ msgstr "[ Αυτό το μήνυμα εστάλει από "
+
+#~ msgid "New String!"
+#~ msgstr "Νέο κείμενο!"

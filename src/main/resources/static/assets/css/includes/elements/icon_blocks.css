@@ -1,0 +1,18 @@
+/*
+--------------------------------------------------------------  
+ 
+Icon Blocks
+
+-------------------------------------------------------------- 
+*/
+.icon_block i {
+  font-size: 40px;
+}
+.icon_block h3,
+.icon_block h4 {
+  font-weight: 700;
+}
+.icon_block p {
+  font-weight: 200;
+  font-size: 16px;
+}
