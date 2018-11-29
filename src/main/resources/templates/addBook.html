@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+My Add Book Form!
+<form action="#" th:object="${book}"  th:action="@{/addBook}" method="post">
+    <div class="form-group col-lg-6">
+        <label class="col-form-label col-form-label-lg" for="inputLarge">Book Title:</label>
+        <input th:field="*{name}"  class="form-control form-control-lg" type="text" placeholder="Enter book title here" id="inputLarge">
+    </div>
+
+    <div class="form-group col-lg-6">
+        <label class="col-form-label col-form-label-lg" for="inputLarge">ISBN:</label>
+        <input th:field="*{ISBN}" class="form-control form-control-lg" type="text" placeholder="Enter ISBN here" id="inputLarge">
+    </div>
+
+    <div class="form-group col-lg-6">
+        <label class="col-form-label col-form-label-lg" for="inputLarge">Price:</label>
+        <input th:field="*{price}" class="form-control form-control-lg" type="text" placeholder="Enter price here" id="inputLarge">
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+</form>
+</body>
+</html>
+
+
+<!--&lt;!&ndash; YESTERDAY&ndash;&gt;-->
+<!--<form  <span class="your-name">-->
+                    <!--<input type="text" placeholder="Name" class="name form-control"></span><span class="your-phone">-->
+                    <!--<input type="text"  placeholder="ISBN" class="phone form-control"></span><span class="your-email">-->
+                    <!--<input type="text"  placeholder="Price" class="email form-control"></span><span class="your-subject">-->
+                  <!--<button type="submit" name="submit" class="submit_btn btn btn-primary">SUBMIT</button>-->
+                  <!--<div class="notice btn btn-metro alert alert-warning alert-dismissable hidden"></div><img src="./assets/images/ajax-loader.gif" alt="Sending ..." class="ajax-loader not_visible">-->
+<!--</form>-->

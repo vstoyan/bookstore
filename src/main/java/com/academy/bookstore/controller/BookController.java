@@ -52,35 +52,32 @@ public class BookController {
         return ResponseEntity.ok(bookService.findAll());
     }
 
-    @GetMapping("/helloWorld")
+    @GetMapping("/index")
     public String index() {
         return "index";
     }
 
-    @GetMapping("/contact")
+    @GetMapping("/book")
     public ModelAndView test(Model model) {
-        model.addAttribute("book", new Book());
-        ModelAndView modelAndView = new ModelAndView("contact");
+        ModelAndView modelAndView = new ModelAndView("index");
         modelAndView.addObject("books", bookService.findAll());
         return modelAndView;
     }
 
-
-    @GetMapping("/booksView")
-    public ModelAndView getAllBooksForView() {
-        ModelAndView modelAndView = new ModelAndView("contact");
-        modelAndView.addObject("books", bookService.findAll());
-        return modelAndView;
+    @GetMapping("/addBook")
+    public String addBookView(Model model){
+        model.addAttribute("book", new Book());
+        return "addBook";
     }
 
     @PostMapping("/addBook")
-        public String addBookFromView(@ModelAttribute("book") Book book, BindingResult bindingResult){
+    public String addBookFromView(@ModelAttribute("book") Book book, BindingResult bindingResult){
         if (bindingResult.hasErrors()) {
             for(ObjectError error: bindingResult.getAllErrors()){
                 System.out.println(error);
             }
         }
         bookService.createBook(book);
-        return  "redirect:/contact";
+        return  "redirect:/book";
     }
 }
